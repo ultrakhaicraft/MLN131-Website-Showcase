@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/HomePage";
 import About from "./pages/About";
 import News from "./pages/News";
-import Navbar from "./components/Narbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -24,7 +23,9 @@ function App() {
         </main>
 
         {/* Footer (optional) */}
-        <Footer/>
+        <footer className="py-4 text-center bg-gray-200">
+          <p className="text-gray-600">© 2025 MyWebsite. All rights reserved.</p>
+        </footer>
       </div>
     </Router>
   );

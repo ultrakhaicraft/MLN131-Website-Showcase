@@ -24,7 +24,7 @@ function App() {
         </main>
 
         {/* Footer (optional) */}
-        <Footer/>
+        <<Footer/>
       </div>
     </Router>
   );
