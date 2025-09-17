@@ -23,7 +23,7 @@ function Footer() {
   <h2 className="mb-2 text-xl font-bold">Social</h2>
   <ul className="space-y-2">
     <li className="flex items-center gap-2">
-      <img src={facebookLogo} alt="Facebook" className="w-8 h-8" />
+      <img src={facebookLogo} alt="Facebook" className="w-10 h-10" />
       <a href="#" className="hover:text-blue-400">Facebook</a>
     </li>
     <li className="flex items-center gap-2">
@@ -31,7 +31,7 @@ function Footer() {
       <a href="#" className="hover:text-blue-400">Twitter</a>
     </li>
     <li className="flex items-center gap-2">
-      <img src={instagramLogo} alt="Instagram" className="w-8 h-8" />
+      <img src={instagramLogo} alt="Instagram" className="w-10 h-10" />
       <a href="#" className="hover:text-blue-400">Instagram</a>
     </li>
   </ul>

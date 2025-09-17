@@ -31,7 +31,7 @@ function Footer() {
       <a href="#" className="hover:text-blue-400">Twitter</a>
     </li>
     <li className="flex items-center gap-2">
-      <img src={instagramLogo} alt="Instagram" className="w-8 h-8" />
+      <img src={instagramLogo} alt="Instagram" className="w-12 h-12" />
       <a href="#" className="hover:text-blue-400">Instagram</a>
     </li>
   </ul>

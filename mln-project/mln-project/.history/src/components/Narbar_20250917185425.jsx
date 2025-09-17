@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-5 py-3 text-white bg-[#454545] shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-3 text-white bg-[#454545] shadow-md z-50">
       {/* Logo */}
       <div className="text-3xl font-bold">
         <Link to="/">Chương 7: Vấn đề gia đình thời kì quá độ lên chủ nghĩa xã hội</Link>
