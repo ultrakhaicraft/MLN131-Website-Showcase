@@ -1,0 +1,17 @@
+.massive-text{
+    font-size: 110px;
+    
+}
+
+.colored-text{
+    color: #FFFAE2;
+}
+
+.title-image{
+    z-index: 20;
+    height: 300px;
+    width: 600px;
+    position: relative;
+    left: 250px;
+    bottom: 97px;
+}
