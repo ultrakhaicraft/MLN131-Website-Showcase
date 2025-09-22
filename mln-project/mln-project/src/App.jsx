@@ -6,6 +6,7 @@ import About from "./pages/About";
 import News from "./pages/News";
 import Navbar from "./components/Narbar";
 import Footer from "./components/Footer";
+import Post from './pages/Post'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
             <Route path="/news" element={<News />} />
+            <Route path="/post" element={<Post />} />
           </Routes>
         </main>
 

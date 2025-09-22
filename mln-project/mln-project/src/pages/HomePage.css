@@ -15,3 +15,66 @@
     left: 250px;
     bottom: 97px;
 }
+
+/* Styling cho phần section bạn cung cấp */
+        .more-about-us {
+            margin-bottom: 2rem;
+        }
+
+        .more-about-us .section-title {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .more-about-us .section-text {
+            color: #020202;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+/* --- CSS cho component nút bấm --- */
+        .read-more-container {
+            display: inline-block; /* Đảm bảo khối bao quanh vừa với nội dung */
+            text-align: left;
+        }
+        
+        .read-more-button {
+            /* Reset style của nút bấm */
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+
+            /* Flexbox để căn chỉnh chữ và mũi tên */
+            display: flex;
+            align-items: center;
+            gap: 0.75rem; /* Khoảng cách giữa chữ và mũi tên */
+
+            /* Kiểu chữ giống trong ảnh */
+            font-family: monospace;
+            font-size: 1rem;
+            letter-spacing: 0.1em; /* Giãn cách ký tự */
+            color: #1a1a1a; /* Màu chữ đen */
+            text-transform: uppercase; /* In hoa */
+        }
+        
+        /* Dấu gạch chân */
+        .read-more-container::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #1a1a1a;
+            margin-top: 8px; /* Khoảng cách từ chữ xuống gạch chân */
+        }
+        
+        /* Hiệu ứng cho mũi tên khi di chuột */
+        .read-more-button .arrow {
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .read-more-button:hover .arrow {
+            transform: translateX(5px); /* Di chuyển mũi tên sang phải 5px */
+        }

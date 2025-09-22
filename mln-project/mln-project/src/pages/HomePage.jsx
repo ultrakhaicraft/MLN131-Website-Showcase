@@ -1,7 +1,16 @@
 import React from "react";
 import './HomePage.css'
+import { Link } from "react-router-dom";
+import Family1 from "../assets/Family1.jpg"; // adjust path if needed
+
 
 function Homepage() {
+
+  const handleReadMoreClick = () => {
+    alert("Nút bấm đã được nhấn!");
+    // Bạn có thể thêm logic điều hướng hoặc các hành động khác ở đây
+  };
+
   return (
     <div className="bg-[#FFFAE2] min-h-screen p-8">
       <div className="relative mb-12">
@@ -30,7 +39,7 @@ function Homepage() {
       </div>
 
       {/* Thông tin giới thiệu */}
-      <section className="mb-12">
+      <section className="mb-12 ">
         <h2 className="mb-4 text-2xl font-bold">
           Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin
         </h2>
@@ -50,41 +59,64 @@ function Homepage() {
       </section>
 
       {/* More about us */}
-      <section className="mb-12">
-        <h2 className="mb-2 text-xl font-bold">More about us</h2>
-        <p className="text-gray-700">
+      <section className="more-about-us">
+        <h2 className="section-title">More about us</h2>
+        <p className="section-text">
           Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin,
           Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin,
           Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin,
           Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin.
         </p>
+        <ReadMoreButton onClick={handleReadMoreClick}>
+                            MORE ABOUT US
+        </ReadMoreButton>
       </section>
 
         {/* Bài viết nổi bật */}
-      <section>
-        <h2 className="mb-6 text-2xl font-bold">Các Bài viết nổi bật</h2>
-        
-        <div className="grid gap-6 md:grid-cols-3">
-          {/* Left column (2 stacked items) */}
-          <div className="flex flex-col gap-6">
-            <div className="h-40 bg-gray-300 rounded-md flex items-end p-2 text-sm">
-              Tại sao giới trẻ hiện nay
-            </div>
-            <div className="h-40 bg-gray-300 rounded-md flex items-end p-2 text-sm">
-              Tại sao giới trẻ hiện nay
-            </div>
-          </div>
+<section className="mb-20">
+  <h2 className="mb-6 text-2xl font-bold">Các Bài viết nổi bật</h2>
 
-          {/* Right column (spanning 2 cols) */}
-          <div className="md:col-span-2 flex">
-            <div className="h-full w-full bg-gray-300 rounded-md flex items-end p-2 text-sm min-h-[332px]">
-              Tại sao giới trẻ hiện nay
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="grid gap-6 md:grid-cols-3">
+    {/* Big grey box first */}
+    <div className="md:col-span-2 flex flex-col gap-2">
+      <Link to="/post">
+        <img
+          src={Family1}
+          alt="Family"
+          className="w-full rounded-md min-h-[332px] object-cover cursor-pointer hover:opacity-90 transition"
+        />
+      </Link>
+      <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+    </div>
+
+    {/* Smaller stacked boxes */}
+    <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-2">
+        <div className="h-40 bg-gray-300 rounded-md"></div>
+        <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+      </div>
+      <div className="flex flex-col gap-2">
+        <div className="h-40 bg-gray-300 rounded-md"></div>
+        <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
+
+const ReadMoreButton = ({ children, onClick }) => {
+            return (
+                <div className="read-more-container">
+                    <button onClick={onClick} className="read-more-button">
+                        <span>{children}</span>
+                        <span className="arrow">→</span>
+                    </button>
+                </div>
+            );
+        };
+
 
 export default Homepage;
