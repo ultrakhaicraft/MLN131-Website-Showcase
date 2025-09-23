@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-5 py-3 text-white bg-[#454545] shadow-md z-50">
       {/* Logo */}
       <div className="text-3xl font-bold">
-        <Link to="/">Chương 7: Vấn đề gia đình thời kì quá độ lên chủ nghĩa xã hội</Link>
+        <Link to="/">Chương 6: Vấn đề dân tộc và tôn giáo trong thời kỳ quá độ chủ nghĩa xã hội</Link>
       </div>
 
       {/* Menu */}

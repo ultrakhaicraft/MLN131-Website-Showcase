@@ -1,14 +1,14 @@
 import React from "react";
 import './HomePage.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Family1 from "../assets/Family1.jpg"; // adjust path if needed
+import Dang1 from "../assets/Dang1.jpg";
 
 
 function Homepage() {
-
+  const navigate = useNavigate();
   const handleReadMoreClick = () => {
-    alert("Nút bấm đã được nhấn!");
-    // Bạn có thể thêm logic điều hướng hoặc các hành động khác ở đây
+    navigate("/about");
   };
 
   return (
@@ -33,24 +33,18 @@ function Homepage() {
 
           {/* Gray rectangle (image) */}
           <div className="flex-1">
-            <div className="title-image bg-gray-300 rounded-md"></div>
+            <img className="title-image rounded-md" src={Dang1} alt="Hình ảnh của Đảng" />
           </div>
         </div>
       </div>
 
       {/* Thông tin giới thiệu */}
       <section className="mb-12 ">
-        <h2 className="mb-4 text-2xl font-bold">
-          Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin
+        <h2 className="mb-4 text-4xl font-bold">
+          Cổng thông tin về dân tộc và tôn giáo của Việt Nam
         </h2>
         <p className="mb-4 text-gray-700">
-          Lorem ipsum dolor sit amet consectetur. Gravida elit malesuada ut
-          aliquet. Ullamcorper ultrices tortor est semper tristique volutpat
-          amet massa arcu. Elit lorem id est eleifend arcu tincidunt sit. At in
-          morbi mauris molestie scelerisque lectus. Sed convallis nibh viverra
-          mattis egestas faucibus. Aenean adipiscing posuere bibendum leo
-          malesuada ut facilisi. Neque diam sit amet eros et molestie arcu
-          ultrices.
+          Chào mừng mọi người đển với cổng thông tin về dân tộc và tôn giáo của Việt Nam dành cho người Việt Nam
         </p>
         {/* TODO: Bigger image height and smaller image width */}
         <div className="flex justify-center">
@@ -60,63 +54,61 @@ function Homepage() {
 
       {/* More about us */}
       <section className="more-about-us">
-        <h2 className="section-title">More about us</h2>
+        <h2 className="section-title">Về chúng tôi</h2>
         <p className="section-text">
-          Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin,
-          Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin,
-          Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin,
-          Cổng thông tin về chủ nghĩa xã hội và chủ nghĩa Mác-Lênin.
+          tại đây các bạn có thể đọc qua các tài liệu và
+          tin tức mới nhất về dân tộc và tôn giáo của Việt Nam.
         </p>
         <ReadMoreButton onClick={handleReadMoreClick}>
-                            MORE ABOUT US
+          Nhấn vào đây để tìm hiểu thêm
         </ReadMoreButton>
       </section>
 
-        {/* Bài viết nổi bật */}
-<section className="mb-20">
-  <h2 className="mb-6 text-2xl font-bold">Các Bài viết nổi bật</h2>
+      {/* Bài viết nổi bật */}
+      <section className="mb-20">
+        <h2 className="mb-6 text-2xl font-bold">Các Bài viết nổi bật</h2>
 
-  <div className="grid gap-6 md:grid-cols-3">
-    {/* Big grey box first */}
-    <div className="md:col-span-2 flex flex-col gap-2">
-      <Link to="/post">
-        <img
-          src={Family1}
-          alt="Family"
-          className="w-full rounded-md min-h-[332px] object-cover cursor-pointer hover:opacity-90 transition"
-        />
-      </Link>
-      <p className="text-sm">Tại sao giới trẻ hiện nay</p>
-    </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          {/* Big grey box first */}
+          <div className="md:col-span-2 flex flex-col gap-2">
+            <Link to="/post">
+              <img
+                src={Family1}
+                alt="Family"
+                className="w-full rounded-md min-h-[332px] object-cover cursor-pointer hover:opacity-90 transition"
+              />
+            </Link>
+            <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+          </div>
 
-    {/* Smaller stacked boxes */}
-    <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-2">
-        <div className="h-40 bg-gray-300 rounded-md"></div>
-        <p className="text-sm">Tại sao giới trẻ hiện nay</p>
-      </div>
-      <div className="flex flex-col gap-2">
-        <div className="h-40 bg-gray-300 rounded-md"></div>
-        <p className="text-sm">Tại sao giới trẻ hiện nay</p>
-      </div>
-    </div>
-  </div>
-</section>
+          {/* Smaller stacked boxes */}
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <div className="h-40 bg-gray-300 rounded-md"></div>
+              <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <div className="h-40 bg-gray-300 rounded-md"></div>
+              <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
   );
 }
 
 const ReadMoreButton = ({ children, onClick }) => {
-            return (
-                <div className="read-more-container">
-                    <button onClick={onClick} className="read-more-button">
-                        <span>{children}</span>
-                        <span className="arrow">→</span>
-                    </button>
-                </div>
-            );
-        };
+  return (
+    <div className="read-more-container">
+      <button onClick={onClick} className="read-more-button">
+        <span>{children}</span>
+        <span className="arrow">→</span>
+      </button>
+    </div>
+  );
+};
 
 
 export default Homepage;

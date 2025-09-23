@@ -7,6 +7,7 @@ import News from "./pages/News";
 import Navbar from "./components/Narbar";
 import Footer from "./components/Footer";
 import Post from './pages/Post'
+import AIUsage from "./pages/AIUsage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/news" element={<News />} />
             <Route path="/post" element={<Post />} />
+            <Route path="/ai_usage" element={<AIUsage/>}/>
           </Routes>
         </main>
 
