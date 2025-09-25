@@ -1,13 +1,21 @@
 import React from "react";
 
-function PostImage({src, alt, imageCaption}) {
+function PostImage({ src, alt, imageCaption }) {
   return (
-    <>
-    <img src={src} alt={alt} className="w-full h-48"/>
-    <p className="text-center text-sm mt-2 text-gray-700">
-            {imageCaption}
-    </p>
-    </>
+    <div className="my-6">
+      <div className="flex justify-center">
+        <img 
+          src={src} 
+          alt={alt} 
+          className="max-w-full h-auto rounded-md shadow-md" 
+        />
+      </div>
+      {imageCaption && (
+        <p className="text-center text-sm italic mt-2 text-gray-600">
+          {imageCaption}
+        </p>
+      )}
+    </div>
   );
 }
 

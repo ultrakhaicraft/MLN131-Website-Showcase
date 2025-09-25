@@ -5,7 +5,7 @@ const AIUsage = () => {
   return (
     <div className="body min-h-screen bg-[#FAF7E6] px-6 py-10">
       {/* Header Card */}
-      <div className="bg-[#FAF7E6] border-2 border-yellow-500 rounded-lg shadow-md p-8 max-w-3xl mx-auto text-center">
+      <div className="bg-[#FAF7E6] border-2 border-yellow-500 rounded-lg shadow-md p-8 max-w-3xl mx-auto text-center mt-10">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
           Artificial Intelligence Usage (Sử dụng trí tuệ nhân tạo)
         </h1>
@@ -34,8 +34,10 @@ const AIUsage = () => {
         <h2 className="text-2xl font-semibold text-gray-900">
           Lý do sử dụng AI
         </h2>
-        Dưới đây là lý do tại sao chúng tôi sử dụng AI:
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
+        
+        <p className="text-gray-700 leading-relaxed">
+          Dưới đây là lý do tại sao chúng tôi sử dụng AI:
+          <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Đầu tiên, để hỗ trợ việc triển khai UI/UX vào mã Front end.
             Lý do là tất cả chúng tôi không phải là nhà phát triển front end với kỹ năng thiết kế trang web. Do đó, việc sử dụng AI chủ yếu là để
             tạo Code React dựa trên thiết kế Figma của chúng tôi</li>
@@ -43,6 +45,8 @@ const AIUsage = () => {
             để nhanh chóng chuyển sang việc chọn lọc ý tưởng. Do đó, công việc của AI là tạo ra khung ý tưởng cơ bản cho mỗi
             bài viết cũng như tìm kiếm các nguồn trực tuyến, chẳng hạn như tài liệu nghiên cứu học thuật và tin tức</li>
         </ul>
+        </p>
+        
 
         <h2 className="text-2xl font-semibold text-gray-900">
           Trách nhiệm của chúng tôi trong việc tuân thủ Chính trực học thuật
@@ -62,10 +66,12 @@ const AIUsage = () => {
           So sánh giữa Phản hồi của AI và Works Đã Chỉnh sửa của Nhóm Chúng Tôi
         </h2>
 
+        <h3 className="text-2xl text-gray-900" >Exhibit 1</h3>
+
         {/* Comparison Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          <h3 className="text-2xl text-gray-900" >Exhibit 1</h3>
+          
           {/* AI Response Placeholder */}
           <div className="flex flex-col items-center">
             <div className="w-full h-[500px]  bg-gray-300 rounded-md"></div>

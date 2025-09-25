@@ -1,7 +1,7 @@
 import React from "react";
 import './HomePage.css'
 import { Link, useNavigate } from "react-router-dom";
-import Family1 from "../assets/Family1.jpg"; // adjust path if needed
+import PostImage1 from "../assets/PostImage1.jpg"; 
 import Dang1 from "../assets/Dang1.jpg";
 
 
@@ -73,12 +73,12 @@ function Homepage() {
           <div className="md:col-span-2 flex flex-col gap-2">
             <Link to="/post">
               <img
-                src={Family1}
+                src={PostImage1}
                 alt="Family"
                 className="w-full rounded-md min-h-[332px] object-cover cursor-pointer hover:opacity-90 transition"
               />
             </Link>
-            <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+            <p className="text-sm">Thủ tướng Phạm Minh Chinh chỉ đạo thúc đẩy mạnh phát triến tại các vùng dân tộc thiểu số</p>
           </div>
 
           {/* Smaller stacked boxes */}

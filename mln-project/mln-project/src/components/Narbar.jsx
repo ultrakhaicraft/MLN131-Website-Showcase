@@ -14,6 +14,7 @@ function Navbar() {
         <Link to="/" className="hover:text-blue-400">Trang chủ</Link>
         <Link to="/about" className="hover:text-blue-400">Về chúng tôi</Link>
         <Link to="/news" className="hover:text-blue-400">Tư liệu nổi bật</Link>
+        <Link to ="/ai_usage" className="hover:text-blue-400">AI Usage</Link>
       </div>
     </nav>
   );
