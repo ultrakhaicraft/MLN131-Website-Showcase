@@ -17,9 +17,9 @@ const Post = () => {
         </header>
 
         {/* Title */}
-        <h2 className="mb-4 text-center text-2xl font-bold">
+        <h1 className="mb-4 text-center text-2xl font-bold">
           Thủ tướng Phạm Minh Chinh chỉ đạo thúc đẩy mạnh phát triến tại các vùng dân tộc thiểu số
-        </h2>
+        </h1>
 
         {/* First Paragraph */}
         <PostParagraph text='Vào ngày 13/9, tại hội nghịa toàn quốc tổng kết chương trình

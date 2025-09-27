@@ -2,7 +2,7 @@ import React from "react";
 import './HomePage.css'
 import { Link, useNavigate } from "react-router-dom";
 import PostImage1 from "../assets/PostImage1.jpg"; 
-import Dang1 from "../assets/Dang1.jpg";
+import HinhAnhHCM from "../assets/HinhAnhHCM.png"
 
 
 function Homepage() {
@@ -31,19 +31,19 @@ function Homepage() {
             </div>
           </div>
 
-          {/* Gray rectangle (image) */}
+          {/* (image) */}
           <div className="flex-1">
-            <img className="title-image rounded-md" src={Dang1} alt="Hình ảnh của Đảng" />
+            <img className="title-image rounded-md" src={HinhAnhHCM} alt="Hình ảnh của Đảng" />
           </div>
         </div>
       </div>
 
       {/* Thông tin giới thiệu */}
       <section className="mb-12 ">
-        <h2 className="mb-4 text-4xl font-bold">
+        <h2 className="mb-4 text-5xl font-bold">
           Cổng thông tin về dân tộc và tôn giáo của Việt Nam
         </h2>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-xl">
           Chào mừng mọi người đển với cổng thông tin về dân tộc và tôn giáo của Việt Nam dành cho người Việt Nam
         </p>
         {/* TODO: Bigger image height and smaller image width */}
@@ -54,9 +54,9 @@ function Homepage() {
 
       {/* More about us */}
       <section className="more-about-us">
-        <h2 className="section-title">Về chúng tôi</h2>
-        <p className="section-text">
-          tại đây các bạn có thể đọc qua các tài liệu và
+        <h2 className="section-title mb-4 text-5xl font-bold">Về chúng tôi</h2>
+        <p className="section-text text-xl">
+          Trong website này các bạn có thể đọc qua các tài liệu và
           tin tức mới nhất về dân tộc và tôn giáo của Việt Nam.
         </p>
         <ReadMoreButton onClick={handleReadMoreClick}>
@@ -66,7 +66,7 @@ function Homepage() {
 
       {/* Bài viết nổi bật */}
       <section className="mb-20">
-        <h2 className="mb-6 text-2xl font-bold">Các Bài viết nổi bật</h2>
+        <h2 className="section-title">Các Bài viết nổi bật</h2>
 
         <div className="grid gap-6 md:grid-cols-3">
           {/* Big grey box first */}
@@ -75,21 +75,33 @@ function Homepage() {
               <img
                 src={PostImage1}
                 alt="Family"
-                className="w-full rounded-md min-h-[332px] object-cover cursor-pointer hover:opacity-90 transition"
+                className="w-full rounded-md h-[600px] object-cover cursor-pointer hover:opacity-90 transition"
               />
             </Link>
-            <p className="text-sm">Thủ tướng Phạm Minh Chinh chỉ đạo thúc đẩy mạnh phát triến tại các vùng dân tộc thiểu số</p>
+            <p className="medium-text">Thủ tướng Phạm Minh Chinh chỉ đạo thúc đẩy mạnh phát triến tại các vùng dân tộc thiểu số</p>
           </div>
 
           {/* Smaller stacked boxes */}
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-2">
-              <div className="h-40 bg-gray-300 rounded-md"></div>
-              <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+            <div className="flex flex-col gap-2 mb-10">              
+              <Link to="/post">
+              <img
+                src={PostImage1}
+                alt="Family"
+                className="w-full h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
+              />
+            </Link>
+              <p className="medium-text">Tăng cường quản lí nhà nước về hoạt động trên không gian mạng Việt Nam hiện nay</p>
             </div>
-            <div className="flex flex-col gap-2">
-              <div className="h-40 bg-gray-300 rounded-md"></div>
-              <p className="text-sm">Tại sao giới trẻ hiện nay</p>
+            <div className="flex flex-col gap-2">             
+              <Link to="/post">
+              <img
+                src={PostImage1}
+                alt="Family"
+                className="w-full  h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
+              />
+              </Link>
+              <p className="medium-text">Tại sao giới trẻ hiện nay</p>
             </div>
           </div>
         </div>
