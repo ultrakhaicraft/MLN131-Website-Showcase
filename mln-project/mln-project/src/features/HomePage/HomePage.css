@@ -3,17 +3,28 @@
     
 }
 
+.medium-text{
+    font-size: 30px;
+    font-weight: 400;
+}
+
 .colored-text{
     color: #FFFAE2;
 }
 
 .title-image{
     z-index: 20;
-    height: 300px;
+    height: 700px;
     width: 600px;
     position: relative;
     left: 250px;
-    bottom: 97px;
+    bottom: 150px;
+
+     /* White outline effect */
+  filter: drop-shadow(10px 0 0 white)
+          drop-shadow(-10px 0 0 white)
+          drop-shadow(0 0px 0 white)
+          drop-shadow(0 -10px 0 white);
 }
 
 /* Styling cho phần section bạn cung cấp */
@@ -21,10 +32,10 @@
             margin-bottom: 2rem;
         }
 
-        .more-about-us .section-title {
-            margin-bottom: 0.5rem;
-            font-size: 1.25rem;
-            font-weight: bold;
+        .section-title {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            font-weight: 700;
         }
 
         .more-about-us .section-text {
