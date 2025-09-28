@@ -3,8 +3,8 @@ import { motion as Motion } from "framer-motion";
 export default function Navbar() {
   const navigate = useNavigate();
   return (
-    <header className="sticky top-0 z-40 shadow-sm bg-white/90 backdrop-blur">
-      <nav className="flex items-center justify-between max-w-6xl px-4 py-6 mx-auto">
+    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur shadow-sm">
+      <nav className="mx-auto max-w-6xl px-4 py-6 flex items-center justify-between">
         <Motion.div
           whileHover={{ scale: 1.05 }}
           className="text-xl font-bold text-indigo-600"
