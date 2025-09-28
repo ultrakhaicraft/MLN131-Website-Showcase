@@ -1,14 +1,16 @@
 import React from "react";
 import './HomePage.css'
 import { Link, useNavigate } from "react-router-dom";
-import PostImage1 from "../assets/PostImage1.jpg"; 
+import PostImage1 from "../assets/PostImage1.jpg";
 import HinhAnhHCM from "../assets/HinhAnhHCM.png"
 
 
 function Homepage() {
   const navigate = useNavigate();
   const handleReadMoreClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     navigate("/about");
+
   };
 
   return (
@@ -83,23 +85,23 @@ function Homepage() {
 
           {/* Smaller stacked boxes */}
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-2 mb-10">              
+            <div className="flex flex-col gap-2 mb-10">
               <Link to="/post">
-              <img
-                src={PostImage1}
-                alt="Family"
-                className="w-full h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
-              />
-            </Link>
+                <img
+                  src={PostImage1}
+                  alt="Family"
+                  className="w-full h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
+                />
+              </Link>
               <p className="medium-text">Tăng cường quản lí nhà nước về hoạt động trên không gian mạng Việt Nam hiện nay</p>
             </div>
-            <div className="flex flex-col gap-2">             
+            <div className="flex flex-col gap-2">
               <Link to="/post">
-              <img
-                src={PostImage1}
-                alt="Family"
-                className="w-full  h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
-              />
+                <img
+                  src={PostImage1}
+                  alt="Family"
+                  className="w-full  h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
+                />
               </Link>
               <p className="medium-text">Tại sao giới trẻ hiện nay</p>
             </div>

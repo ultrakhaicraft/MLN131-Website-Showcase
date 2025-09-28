@@ -2,7 +2,7 @@ import React from "react";
 import './HomePage.css'
 import { Link, useNavigate } from "react-router-dom";
 import Family1 from "@/assets/Family1.jpg";
-import Dang1 from "@/assets/Dang1.jpg";
+import PostImage1 from "@/assets/Dang1.jpg";
 import HinhAnhHCM from "@/assets/HinhAnhHCM.png"
 
 

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import Fb from "@/assets/fb.png";
 import Ig from "@/assets/ig.png";
 import X from "@/assets/x.png";
@@ -10,7 +10,7 @@ export default function Footer() {
         <p className="text-sm text-gray-500">© {new Date().getFullYear()} MLN</p>
         <div className="flex gap-4">
           {[{img:Fb,alt:"Facebook"},{img:Ig,alt:"Instagram"},{img:X,alt:"Twitter"}].map(({img,alt},i)=>(
-            <motion.img
+            <Motion.img
               key={i}
               src={img}
               alt={alt}
