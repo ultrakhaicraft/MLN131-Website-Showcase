@@ -1,3 +1,8 @@
+import React from "react";
+import PostImage1 from "../../assets/images/post-image-1.jpg";
+import PostParagraph from "../../components/PostParagraph";
+import PostImage from "../../components/PostImage";
+
 const PostBaoCaoTonGiao = () => {
   return (
     <div className="min-h-screen bg-[#FAF7E6]">

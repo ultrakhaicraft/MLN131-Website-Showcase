@@ -1,3 +1,5 @@
+import React from "react";
+
 const PostTonGiao = () => {
   return (
     <div className="min-h-screen bg-[#FAF7E6]">
@@ -16,9 +18,13 @@ const PostTonGiao = () => {
         </h1>
 
         {/* First Paragraph */}
-        <PostParagraph text='Trong thời kỳ quá độ lên chủ nghĩa xã hội, tôn giáo là một hiện tượng tinh thần mang nhiều mặt phức tạp: vừa là nhu cầu tinh thần, vừa có thể trở thành công cụ chính trị khi bị lợi dụng.
-         Việc nhận diện bản chất, nguồn gốc, tính chất của tôn giáo và xác lập nguyên tắc xử lý phù hợp là cần thiết để vừa bảo đảm quyền tự do tín ngưỡng, vừa giữ vững ổn định xã hội và khối đại đoàn kết dân tộc.
-        Bài tiểu luận sẽ hỏi "Làm sao chúng ta có thể quản lý chặt chẽ tôn giáo để đảm bảo an nin xã hội ?" thông qua này tóm lược quan điểm của chủ nghĩa Mác–Lênin về tôn giáo, phân tích đặc điểm tôn giáo ở Việt Nam và nêu nguyên tắc, định hướng chính sách xử lý vấn đề tôn giáo trong bối cảnh quá độ.' className='mb-4 font-semibold'/>
+        <PostParagraph text='Trong thời kỳ quá độ lên chủ nghĩa xã hội, tôn giáo là một hiện tượng tinh thần mang nhiều mặt: 
+        vừa là nhu cầu tinh thần, vừa có thể trở thành công cụ chính trị khi bị lợi dụng.
+        Việc nhận diện tính chất của tôn giáo và xác lập nguyên tắc xử lý phù hợp là cần thiết để vừa giữ vững ổn định xã hội 
+        và khối đại đoàn kết dân tộc. ' className='mb-4 font-bold'/>
+
+        <PostParagraph text='Bài viết này tóm lược quan điểm của chủ nghĩa Mác–Lênin về tôn giáo, phân tích đặc điểm tôn giáo ở Việt Nam 
+        và nêu nguyên tắc, định hướng chính sách xử lý vấn đề tôn giáo trong bối cảnh quá độ. ' className='mb-4 font-bold'/>
 
         {/* First Image */}
         <PostImage src={PostImage1} alt='Thủ tướng Phạm Minh Chính phát biểu tại hội nghị.' 

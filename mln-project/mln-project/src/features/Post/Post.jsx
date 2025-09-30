@@ -3,6 +3,7 @@ import React from "react";
 import PostImage from "@/components/PostImage";
 import PostParagraph from "@/components/PostParagraph";
 import PostImage1 from "@/assets/PostImage1.jpg"; 
+import PostImage2 from "@/assets/PostImage2.jpg";
 
 const Post = () => {
   return (
@@ -55,8 +56,8 @@ const Post = () => {
        
 
          {/* Second Image */}
-        <PostImage src={PostImage1} alt='Thủ tướng Phạm Minh Chính phát biểu tại hội nghị.' 
-          imageCaption="Thủ tướng Phạm Minh Chính phát biểu tại hội nghị."/>
+        <PostImage src={PostImage2} alt='Hình ảnh khách nước ngoài thăm quan vùng dân tộc thiểu số.' 
+          imageCaption="Khách nước ngoài thăm quan vùng dân tộc thiểu số."/>
 
 
         <PostParagraph text="Theo Ban Chỉ đạo Trung ương các Chương trình mục tiêu quốc gia,
