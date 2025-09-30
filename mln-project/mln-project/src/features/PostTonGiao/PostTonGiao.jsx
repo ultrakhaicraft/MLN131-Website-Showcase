@@ -1,10 +1,4 @@
-// src/pages/Post.jsx - Page of Post
-import React from "react";
-import PostImage from "@/components/PostImage";
-import PostParagraph from "@/components/PostParagraph";
-import PostImage1 from "@/assets/PostImage1.jpg"; 
-
-const Post = () => {
+const PostTonGiao = () => {
   return (
     <div className="min-h-screen bg-[#FAF7E6]">
       <div className="max-w-8xl mx-auto px-6 py-8 bg-[#FAF7E6] mt-5">
@@ -12,26 +6,40 @@ const Post = () => {
         <header className="mb-6">
          
           <p className="text-sm text-gray-600 border-b border-gray-300 pb-1">
-            Thứ tư, 24/09/2025 | 12:30
+            Thứ tư, 29/09/2025 | 12:30
           </p>
         </header>
 
         {/* Title */}
         <h1 className="mb-4 text-center text-2xl font-bold">
-          Thủ tướng Phạm Minh Chinh chỉ đạo thúc đẩy mạnh phát triến tại các vùng dân tộc thiểu số
+          Thông qua thời kỳ quá độ, làm sao để tôn giáo cần được quản lý chặt chẽ hơn để đảm bảo an ninh trật tự xã hội ?
         </h1>
 
         {/* First Paragraph */}
-        <PostParagraph text='Vào ngày 13/9, tại hội nghịa toàn quốc tổng kết chương trình
-        và định hướng 2026-2030 tại Hà Nội, Thủ tướng Phạm Minh Chính đã chỉ đạo
-        các bộ, ngành và địa phương để bàn về việc thúc đẩy phát triển 
-        kinh tế - xã hội tại các vùng dân tộc thiểu số. Thông qua thực hiện chủ trương
-        của Đảng và Chính sách của Nhà Nước' className='mb-4 font-semibold'/>
+        <PostParagraph text='Trong thời kỳ quá độ lên chủ nghĩa xã hội, tôn giáo là một hiện tượng tinh thần mang nhiều mặt phức tạp: vừa là nhu cầu tinh thần, vừa có thể trở thành công cụ chính trị khi bị lợi dụng.
+         Việc nhận diện bản chất, nguồn gốc, tính chất của tôn giáo và xác lập nguyên tắc xử lý phù hợp là cần thiết để vừa bảo đảm quyền tự do tín ngưỡng, vừa giữ vững ổn định xã hội và khối đại đoàn kết dân tộc.
+        Bài tiểu luận sẽ hỏi "Làm sao chúng ta có thể quản lý chặt chẽ tôn giáo để đảm bảo an nin xã hội ?" thông qua này tóm lược quan điểm của chủ nghĩa Mác–Lênin về tôn giáo, phân tích đặc điểm tôn giáo ở Việt Nam và nêu nguyên tắc, định hướng chính sách xử lý vấn đề tôn giáo trong bối cảnh quá độ.' className='mb-4 font-semibold'/>
 
         {/* First Image */}
         <PostImage src={PostImage1} alt='Thủ tướng Phạm Minh Chính phát biểu tại hội nghị.' 
           imageCaption="Thủ tướng Phạm Minh Chính phát biểu tại hội nghị."/>
 
+        <h1>Chủ nghĩa Mác–Lênin về tôn giáo</h1>
+        <h2>Tôn giáo là gì ?</h2>
+
+         <PostParagraph text='Thủ tướng Phạm Minh Chính phát biểu:
+        "Việc thúc đẩy phát triển kinh tế - xã hội ở vùng miền núi và vùng dân tộc thiểu số vừa là nhiệm vụ chính trị, vừa là
+        một cam kết nhân đạo đối với các cộng đồng còn gặp nhiều khó khăn về giao thông, giáo dục, y tế và
+        vệ sinh."' className='mb-6'/>
+
+        <h2>Tôn giáo có từ đâu ?</h2>
+        
+         <PostParagraph text='Thủ tướng Phạm Minh Chính phát biểu:
+        "Việc thúc đẩy phát triển kinh tế - xã hội ở vùng miền núi và vùng dân tộc thiểu số vừa là nhiệm vụ chính trị, vừa là
+        một cam kết nhân đạo đối với các cộng đồng còn gặp nhiều khó khăn về giao thông, giáo dục, y tế và
+        vệ sinh."' className='mb-6'/>
+
+        <h2>Tôn giáo có những đặc điểm gì ?</h2>
 
         {/* Second Paragraph */}
         <PostParagraph text='Thủ tướng Phạm Minh Chính phát biểu:
@@ -87,4 +95,4 @@ Sau đợt tái cơ cấu đơn vị hành chính gần đây, 1.516 xã thuộc
   );
 };
 
-export default Post;
+export default PostTonGiao;
