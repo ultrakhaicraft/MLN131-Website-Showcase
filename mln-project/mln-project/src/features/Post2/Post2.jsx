@@ -1,6 +1,6 @@
 import React from "react";
-import PostImage from "../components/PostImage";
-import PostParagraph from "../components/PostParagraph";
+import PostImage from "@/components/PostImage";
+import PostParagraph from "@/components/PostParagraph";
 
 const Post2 = () => {
   return (

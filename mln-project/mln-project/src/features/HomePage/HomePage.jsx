@@ -73,7 +73,7 @@ function Homepage() {
         <div className="grid gap-6 md:grid-cols-3">
           {/* Big grey box first */}
           <div className="flex flex-col gap-2 md:col-span-2">
-            <Link to="/post">
+            <Link to="/post/1">
               <img
                 src={Family1}
                 alt="Family"
@@ -87,7 +87,7 @@ function Homepage() {
           {/* Smaller stacked boxes */}
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2 mb-10">
-              <Link to="/post">
+              <Link to="/post/2">
                 <img
                   src={PostImage1}
                   alt="Family"
@@ -96,14 +96,14 @@ function Homepage() {
               </Link>
               <p className="medium-text">Tăng cường quản lí nhà nước về hoạt động trên không gian mạng Việt Nam hiện nay</p>
               <div className="flex flex-col gap-2">
-                <Link to="/post">
+                <Link to="/post/3">
                   <img
                     src={PostImage1}
                     alt="Family"
                     className="w-full  h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
                   />
                 </Link>
-                <p className="medium-text">Tại sao giới trẻ hiện nay</p>
+                <p className="medium-text">Thông qua thời kỳ quá độ, làm sao để tôn giáo cần được quản lý chặt chẽ hơn để đảm bảo an ninh trật tự xã hội ?</p>
               </div>
             </div>
           </div>

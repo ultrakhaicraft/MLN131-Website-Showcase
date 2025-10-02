@@ -16,6 +16,7 @@ export default function Navbar() {
         <div className="flex gap-6 text-sm">
           {[
             { to: "/", label: "Trang chủ" },
+            { to: "/show-all-posts", label: "Các Bài viết" },
             { to: "/about", label: "Về chúng tôi" },
             { to: "/ai-usage", label: "Sử dụng AI" },
           ].map((link) => (
