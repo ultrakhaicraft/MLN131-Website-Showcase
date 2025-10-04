@@ -1,9 +1,12 @@
 import React from "react";
 import './HomePage.css'
 import { Link, useNavigate } from "react-router-dom";
-import Family1 from "@/assets/Family1.jpg";
 import PostImage1 from "@/assets/Dang1.jpg";
+import PostImage3 from "@/assets/PostImage3.jpg";
 import HinhAnhHCM from "@/assets/HinhAnhHCM.png"
+import IntroImage from "@/assets/hcm_3.jpg";
+import KhaiNiemTonGiao from "@/assets/KhaiNiemTonGiao.jpeg"    
+import HinhAnhLeHoi1 from "@/assets/HinhAnhLeHoi1.jpeg";
 
 
 
@@ -48,9 +51,9 @@ function Homepage() {
         <p className="mb-4 text-xl">
           Chào mừng mọi người đển với cổng thông tin về dân tộc và tôn giáo của Việt Nam dành cho người Việt Nam
         </p>
-        {/* TODO: Bigger image height and smaller image width */}
+        
         <div className="flex justify-center">
-          <div className="h-[400px] w-2/3 bg-gray-300 rounded-md"></div>
+          <img className="rounded-md h-[400px] w-2/3" src={IntroImage} alt="Hình ảnh giới thiệu" /> 
         </div>
       </section>
 
@@ -75,7 +78,7 @@ function Homepage() {
           <div className="flex flex-col gap-2 md:col-span-2">
             <Link to="/post/1">
               <img
-                src={Family1}
+                src={PostImage3}
                 alt="Family"
                 className="w-full rounded-md h-[600px] object-cover cursor-pointer hover:opacity-90 transition"
               />
@@ -89,16 +92,16 @@ function Homepage() {
             <div className="flex flex-col gap-2 mb-10">
               <Link to="/post/2">
                 <img
-                  src={PostImage1}
+                  src={HinhAnhLeHoi1}
                   alt="Family"
                   className="w-full h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
                 />
               </Link>
-              <p className="medium-text">Tăng cường quản lí nhà nước về hoạt động trên không gian mạng Việt Nam hiện nay</p>
+              <p className="medium-text">Tăng cường quản lí nhà nước về hoạt động tôn giáo trên không gian mạng Việt Nam hiện nay</p>
               <div className="flex flex-col gap-2">
                 <Link to="/post/3">
                   <img
-                    src={PostImage1}
+                    src={KhaiNiemTonGiao}
                     alt="Family"
                     className="w-full  h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
                   />
