@@ -1,4 +1,5 @@
 import { BrowserRouter, useRoutes } from "react-router-dom";
+import { Suspense } from "react";
 import DefaultLayout from "@/layouts/DefaultLayout";
 import { routes } from "@/routes";
 
@@ -19,7 +20,9 @@ function RoutesRenderer() {
 export default function App() {
   return (
     <BrowserRouter>
-      <RoutesRenderer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <RoutesRenderer />
+      </Suspense>
     </BrowserRouter>
   );
 }
