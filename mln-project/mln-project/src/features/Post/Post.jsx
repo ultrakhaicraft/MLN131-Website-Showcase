@@ -13,13 +13,13 @@ const Post = () => {
         {/* Header */}
         <header className="mb-6">
           <BackButton className="mb-4" />
-          <p className="text-sm text-gray-600 border-b border-gray-300 pb-1">
+          <p className="pb-1 text-sm text-gray-600 border-b border-gray-300">
             Thứ tư, 24/09/2025 | 12:30
           </p>
         </header>
 
         {/* Title */}
-        <h1 className="mb-4 text-center text-2xl font-bold">
+        <h1 className="mb-4 text-2xl font-bold text-center">
           Thủ tướng Phạm Minh Chinh chỉ đạo thúc đẩy mạnh phát triến tại các vùng dân tộc thiểu số
         </h1>
 
@@ -75,7 +75,7 @@ Sau đợt tái cơ cấu đơn vị hành chính gần đây, 1.516 xã thuộc
       {/* References Source*/}
       <div>
         <h1 className="text-2xl font-bold">Các nguồn thông tin</h1>
-        <p className="text-sm text-gray-600 border-b border-gray-300 pb-1"></p>
+        <p className="pb-1 text-sm text-gray-600 border-b border-gray-300"></p>
         {/* Author Footer */}
         <header className="mb-6">
           <p className="mb-6 mt-6">
