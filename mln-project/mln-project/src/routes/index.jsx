@@ -8,6 +8,7 @@ const Post = lazy(() => import("@/features/Post/Post.jsx"));
 const Post2 = lazy(() => import("@/features/Post2/Post2.jsx"));
 const Post3 = lazy(() => import("@/features/Post3/Post3.jsx"));
 const Post4 = lazy(() => import("@/features/Post4/Post4.jsx"));
+const PostTonGiao = lazy(() => import("@/features/PostTonGiao/PostTonGiao.jsx"));
 const PostBaoCaoTonGiao = lazy(() => import("@/features/PostBaoCaoTonGiao/PostBaoCaoTonGiao.jsx"));
 
 const ShowAllPostPage = lazy(() => import("@/features/ShowAllPostPage/ShowAllPostPage.jsx"));
@@ -21,5 +22,6 @@ export const routes = [
   { path: "/post/2", element: <Post2 /> },
   { path: "/post/3", element: <Post3 /> },
   { path: "/post/4", element: <Post4 /> },
-  { path: "/post/5", element: <PostBaoCaoTonGiao /> },
+  { path: "/post/5", element: <PostTonGiao /> },
+  { path: "/post/6", element: <PostBaoCaoTonGiao /> },
 ];

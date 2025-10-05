@@ -1,4 +1,9 @@
 import React from "react";
+import PostParagraph from "@/components/PostParagraph";
+import PostImage from "@/components/PostImage";
+import KhaiNiemTonGiao from "@/assets/KhaiNiemTonGiao.jpeg";
+import NguonGocTonGiao from "@/assets/NguonGocTonGiao.png";
+import HinhAnhLeHoi1 from "@/assets/HinhAnhLeHoi1.jpeg";
 
 const PostTonGiao = () => {
   return (
@@ -23,26 +28,24 @@ const PostTonGiao = () => {
         <PostParagraph text='Bài viết này tóm lược quan điểm của chủ nghĩa Mác–Lênin về tôn giáo, phân tích đặc điểm tôn giáo ở Việt Nam và nêu nguyên tắc, định hướng chính sách xử lý vấn đề tôn giáo trong bối cảnh quá độ.' className='mb-4 font-bold'/>
 
         {/* First Image */}
-        <PostImage src={PostImage1} alt='Thủ tướng Phạm Minh Chính phát biểu tại hội nghị.' 
+        <PostImage src={KhaiNiemTonGiao} alt='KhaiNiemTonGiao' 
           imageCaption="Thủ tướng Phạm Minh Chính phát biểu tại hội nghị."/>
 
-        <h1>Chủ nghĩa Mác–Lênin về tôn giáo</h1>
-        <h2>Tôn giáo là gì ?</h2>
+        <h1 className="text-2xl font-bold">Chủ nghĩa Mác–Lênin về tôn giáo</h1>
+        <h2 className="text-2xl font-semibold">Tôn giáo là gì ?</h2>
 
         <PostParagraph text='Tôn giáo là một sự tồn tại của niềm tin sâu sắc của một con người liên quan tới các yếu tố siêu nhiên, như là thần linh, thiên chúa, đấng siêu nhiên.. Là một hệ thống quan niệm phản ánh thế giới quan và nhân sinh quan, và có các hoạt động tôn giáo bao gồm đối tượng tôn thờ, giáo lý, giáo luật, lễ nghi và tổ chức.' className='mb-6'/>
 
-         {/* First Image */}
-        <PostImage src={PostImage1} alt='Thủ tướng Phạm Minh Chính phát biểu tại hội nghị.' 
-          imageCaption="Thủ tướng Phạm Minh Chính phát biểu tại hội nghị."/>
+         
 
         <PostParagraph text='Theo quan điểm Mác-Lênin cho rằng, tôn giáo là một hình thái ý thức xã hội thuộc “siêu cấu trúc”, phản ánh hiện thực dưới dạng ảo tưởng. Qua phản ánh đó, các lực lượng tự nhiên và xã hội bị nhân cách hóa, thần bí hóa. Ph. Ăngghen nhận xét rằng các tôn giáo chỉ là “Tất cả mọi tôn giáo chẳng qua chỉ là sự phản ánh hư ảo – vào trong đầu óc của cong người” của những lực lượng chi phối đời sống con người (Dương et al., 2021, 214). Đồng thời, tôn giáo là thực thể xã hội-văn hóa: có niềm tin vào đấng siêu nhiên, giáo thuyết, tổ chức, cơ sở thờ tự và tập hợp tín đồ. Tuy do con người sáng tạo ra, tôn giáo lại có khả năng chi phối đời sống người sáng tạo, dẫn đến sự lệ thuộc và phục tùng mù quáng.' className='mb-6'/>
 
         <PostParagraph text='Bản chất của tôn giáo không giống như bản chất của tín ngưỡng và mê tín dị đoan. Tín ngưỡng là hệ thống miền tin, sự ngưỡng mộ, và cách thức con người trước các sự vật, hiện tượng và lực lượng có tính thần thánh. Còn mê tín dị đoan là miền tin mê muôi, không dựa trên một cơ sơ khoa học nào hết, và toàn bảo phụ bởi yếu tố hư ảo. Dị đoan là sự suy đoán, hành động sai lệch những điều bình thường, chuẩn mực trong cuộc sống. Vì thế cả ba đều khác biệt với nhau, bản chất không giống nhau' className='mb-6'/>
 
-        <h2>Tôn giáo có từ khi nào?</h2>
+        <h2 className="text-2xl font-semibold">Tôn giáo có từ khi nào?</h2>
         
-        <PostImage src={PostImage1} alt='Thủ tướng Phạm Minh Chính phát biểu tại hội nghị.' 
-          imageCaption="Thủ tướng Phạm Minh Chính phát biểu tại hội nghị."/>
+        <PostImage src={NguonGocTonGiao} alt='NguonGocTonGiao' 
+          imageCaption="Nguồn gốc của các tôn giáo"/>
 
         <PostParagraph text='Xét về nguồn gốc tự nhiên, kinh tế-xã hội, trong xã hội nguyên thủy, do sản xuất chưa phát triển, con người vì bất lực trước thiên nhiên tác động và chi phối, cho đến nỗi không giải thích. Từ việc không giải thích được, con người dễ dàng cho là các hiện tượng tự nhiên có sức mạnh, quyền lực thần bí. Khi xã hội xuất hiện các giai cấp đối kháng và có sự áp bức bất công, 
         vì không giải thích được nguồn gốc của sự phân hóa giai cấp, bóc lột bất công, tội ác, và lo sợ trước sự thống trị của lực lượng xã hội. Tôn giáo trở thành phương tiện mà con người mong để được an ủi hay giải phóng họ bằng năng lực siêu nhiên.' className='mb-6'/>
@@ -53,10 +56,9 @@ const PostTonGiao = () => {
 
         <PostParagraph text='Cuối cùng nguồn gốc cũng đến từ tâm lý của con người, khi các hiện tượng tự nhiên, xã hội, hay chỉ đơn giản là rủi ro hoặc vận may thì con người cũng tìm tới tôn giáo (Dương et al., 2021, 217). Thậm chí mong cầu bình an trong các dịp trọng đại, thể hiện lòng yêu nuốc cũng dẫn con người tìm đến tín ngưỡng, tôn giáo.' className='mb-6'/>
 
-        <h2>Tôn giáo có những đặc điểm gì ?</h2>
+        <h2 className="text-2xl font-semibold">Tôn giáo có những đặc điểm gì ?</h2>
 
-        <PostImage src={PostImage1} alt='Thủ tướng Phạm Minh Chính phát biểu tại hội nghị.' 
-          imageCaption="Thủ tướng Phạm Minh Chính phát biểu tại hội nghị."/>
+       
 
         {/* Second Paragraph */}
         <PostParagraph text='Tôn giáo là một hiện tượng lịch sử, có sự quá trình hình thành và biển đổi thông qua giai đoạn lịch sử nhất định và có thể thích nghi với nhiều chế độ kính tế xã hội khác nhau, nghĩa là khi xã hội thay đổi thì tôn giáo thay đổi luôn. Hơn thế nữa, chính các điều kiện kinh tế - xã hội trong lịch sử cụ thể làm cho các tôn giáo bị phân liệt, chia ra thành nhiều tôn giáo khác nhau.' className='mb-6'/>
@@ -67,13 +69,13 @@ const PostTonGiao = () => {
         {/* Second Paragraph */}
         <PostParagraph text='Cuối cùng, tôn giáo có mang tính chính trị khi xã hội có xuất hiện giai cấp, nhất là sự đối kháng về lợi ích giai cấp. Tôn giáo có phản án lợi ích, nguyên vọng của các giai cấp khác nhau, do điều kiện kinh tế xã hội. Đồng thời tôn giáo cũng sử dụng bởi giai cấp thống trị để phục vụ lợi ích của riêng giai cấp mình và chống lại giai cấp lao động và tiến bộ xã hội, đó là tính chính trị tiêu cực. (Dương et al., 2021, 219),' className='mb-6'/>
 
-         <h2>Nguyên tắc giải quyết vấn đề tôn giáo trong thời kỳ quá độ</h2>
+         <h2 className="text-2xl font-semibold">Nguyên tắc giải quyết vấn đề tôn giáo trong thời kỳ quá độ</h2>
 
         {/* Second Paragraph */}
         <PostParagraph text='Vào thời kỳ quá độ lên chủ nghĩa xã hội tại Việt Nam, chúng ta đã có những nguyên tắc cơ bản khi giải quyết vấn đề tôn giáo như sau:' className='mb-6'/>
 
-        <PostImage src={PostImage1} alt='Thủ tướng Phạm Minh Chính phát biểu tại hội nghị.' 
-          imageCaption="Thủ tướng Phạm Minh Chính phát biểu tại hội nghị."/>
+        <PostImage src={HinhAnhLeHoi1} alt='HinhAnhLeHoi1' 
+          imageCaption="Hình ảnh lễ hội"/>
 
         <PostParagraph text="Đầu tiên là phải Tôn trọng và bảo đảm quyền tự do tín ngưỡng, không tín ngưỡng. Vì tôn giáo và tín ngưỡng là miền tin sâu sắc của một ngươi mà họ muốn tôn thờ, thuộc lĩnh vực ý thức tư tưởng, do đó việc theo đạo, đổi đạo và không theo đạo là quyền tự do lựa chọn của nhân dân. Tôn trọng tự do tín ngưỡng cũng chính là tôn trọng quyền của con người, các tôn giáo và hoạt động tôn giáo nên phục vụ để thỏa mãn nhu cầu tín ngưỡng của người dân." className='mb-6'/>
 
@@ -91,16 +93,23 @@ const PostTonGiao = () => {
       </div>
 
       {/* References Source*/}
-      <div>
-        <h1 className="text-2xl font-bold">Các nguồn thông tin</h1>
-        <p className="text-sm text-gray-600 border-b border-gray-300 pb-1"></p>
-        {/* Author Footer */}
-        <header className="mb-6">
-          <p>
-            Dương, X. N., Đỗ, T. T., & Hoàng, C. B. (2021). Giáo trình chủ nghĩa xã hội khoa học: Dành Cho bậc đại Học hệ Không Chuyên lý luận Chính trị. Nxb. Chính trị quốc gia sự thât. 
-          </p>
-        </header>
-      </div>
+      <div className="mt-8">
+  <h1 className="text-2xl font-bold">Các nguồn thông tin</h1>
+  <ul className="pl-6 mt-2 space-y-2 text-blue-600 list-disc">
+    <li>
+      <a
+        href="https://nxbctqg.org.vn/giao-trinh-chu-nghia-xa-hoi-khoa-hoc-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Dương, X. N., Đỗ, T. T., & Hoàng, C. B. (2021). 
+        <i> Giáo trình Chủ nghĩa xã hội khoa học: Dành cho bậc đại học hệ không chuyên lý luận chính trị.</i> 
+        Nxb. Chính trị quốc gia Sự thật.
+      </a>
+    </li>
+  </ul>
+</div>
+
       
 
     </div>
