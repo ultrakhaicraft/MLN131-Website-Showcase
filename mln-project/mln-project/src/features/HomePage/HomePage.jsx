@@ -115,7 +115,7 @@ function Homepage() {
           >
             <Link to="/post/1">
               <img
-                src={Family1}
+                src={PostImage3}
                 alt="Family"
                 className="w-full rounded-lg h-[600px] object-cover shadow-lg hover:brightness-90 transition"
               />
