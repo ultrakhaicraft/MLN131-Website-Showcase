@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import Family1 from "@/assets/PostImage1.jpg";
 import PostImage1 from "@/assets/Dang1.jpg";
+import PostImage3 from "@/assets/PostImage3.jpg";
 import HinhAnhHCM from "@/assets/HinhAnhHCM.png";
 import cover2 from "@/assets/cover2.png";
 
