@@ -11,15 +11,7 @@ import {
 
 const Section = ({ icon: Icon, title, children, index, isOpen, onToggle }) => {
   return (
-    <motion.div
-      className={`p-6 border rounded-2xl transition-all duration-500 
-      ${
-        isOpen
-          ? "bg-gradient-to-br from-[#FFF8E7] via-[#FFF1B2] to-[#FFE57F] shadow-[0_0_20px_rgba(251,192,45,0.3)]"
-          : "bg-white shadow-md border-gray-100"
-      }`}
-      whileHover={{ scale: 1.02 }}
-    >
+    <div className="p-6 bg-white border border-gray-100 shadow-md rounded-xl">
       {/* HEADER */}
       <button
         onClick={() => onToggle(index)}
@@ -27,22 +19,12 @@ const Section = ({ icon: Icon, title, children, index, isOpen, onToggle }) => {
       >
         <div className="flex items-center gap-3">
           <motion.div
-            whileHover={{ scale: 1.2, rotate: 8 }}
-            className={`flex items-center justify-center w-12 h-12 rounded-full transition-all duration-500 ${
-              isOpen ? "bg-[#B71C1C]" : "bg-[#B71C1C]/10"
-            }`}
+            whileHover={{ scale: 1.15, rotate: 5 }}
+            className="flex items-center justify-center w-10 h-10 bg-[#B71C1C]/10 rounded-full"
           >
-            <Icon
-              className={`w-6 h-6 transition-all ${
-                isOpen ? "text-yellow-300" : "text-[#B71C1C]"
-              }`}
-            />
+            <Icon className="w-6 h-6 text-[#B71C1C]" />
           </motion.div>
-          <h2
-            className={`text-xl md:text-2xl font-bold transition-colors ${
-              isOpen ? "text-[#B71C1C]" : "text-gray-900"
-            }`}
-          >
+          <h2 className="text-xl font-bold text-left text-gray-900 md:text-2xl">
             {title}
           </h2>
         </div>
@@ -67,58 +49,45 @@ const Section = ({ icon: Icon, title, children, index, isOpen, onToggle }) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.45 }}
-            className="mt-4 space-y-3 overflow-hidden leading-relaxed text-gray-800"
+            transition={{ duration: 0.4 }}
+            className="mt-4 space-y-3 overflow-hidden leading-relaxed text-gray-700"
           >
             {children}
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </div>
   );
 };
 
 export default function AIUsage() {
   const [openIndex, setOpenIndex] = useState(null);
-  const toggleSection = (index) =>
+
+  const toggleSection = (index) => {
     setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
-    <div className="relative min-h-screen overflow-hidden px-6 py-16 bg-gradient-to-br from-[#FFF8E7] via-[#FFF9C4] to-[#FFF8E7]">
-      {/* ✨ Floating background animation */}
-      <motion.div
-        className="absolute inset-0 pointer-events-none opacity-20"
-        animate={{
-          background:
-            "radial-gradient(circle at 30% 40%, rgba(255,193,7,0.25), transparent 70%), radial-gradient(circle at 70% 60%, rgba(183,28,28,0.2), transparent 70%)",
-        }}
-        transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-      />
-
+    <div className="min-h-screen bg-[#FAF7E6] px-6 py-12">
       {/* HEADER */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative z-10 mb-12 text-center"
+        transition={{ duration: 0.7 }}
+        className="mb-10 text-center"
       >
-        <motion.h1
-          className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#B71C1C] via-[#E53935] to-[#FBC02D] drop-shadow-sm"
-          initial={{ scale: 0.9 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.6 }}
-        >
+        <h1 className="text-3xl md:text-4xl font-extrabold text-[#B71C1C] mb-2">
           Cách chúng tôi sử dụng Trí tuệ Nhân tạo (AI)
-        </motion.h1>
-        <p className="max-w-2xl mx-auto mt-3 text-lg text-gray-700">
-          Bấm vào từng biểu tượng để khám phá cách nhóm chúng tôi ứng dụng AI
-          trong dự án này.
+        </h1>
+        <p className="max-w-2xl mx-auto text-lg text-gray-700">
+          Bấm vào từng biểu tượng để khám phá cách nhóm chúng tôi áp dụng AI trong dự án này.
         </p>
-        <div className="w-20 h-1 mx-auto mt-4 bg-gradient-to-r from-[#B71C1C] to-[#FBC02D] rounded-full"></div>
+        <div className="w-20 h-1 mx-auto mt-4 bg-yellow-500 rounded-full"></div>
       </motion.div>
 
       {/* CONTENT */}
-      <div className="relative z-10 flex flex-col max-w-4xl gap-6 mx-auto">
+      <div className="flex flex-col max-w-4xl gap-6 mx-auto">
+        {/* Section 1 */}
         <Section
           index={1}
           icon={Brain}
@@ -138,6 +107,7 @@ export default function AIUsage() {
           </ul>
         </Section>
 
+        {/* Section 2 */}
         <Section
           index={2}
           icon={Sparkles}
@@ -160,6 +130,7 @@ export default function AIUsage() {
           </ul>
         </Section>
 
+        {/* Section 3 */}
         <Section
           index={3}
           icon={ShieldCheck}
@@ -182,6 +153,7 @@ export default function AIUsage() {
           </ul>
         </Section>
 
+        {/* Section 4 */}
         <Section
           index={4}
           icon={Users2}
@@ -190,11 +162,8 @@ export default function AIUsage() {
           onToggle={toggleSection}
         >
           <p>
-            Chúng tôi tin rằng AI là công cụ mạnh mẽ giúp con người sáng tạo hiệu
-            quả hơn, nhưng yếu tố con người vẫn là trung tâm của mọi đổi mới.
-          </p>
-          <p className="mt-3 font-semibold text-[#B71C1C] italic">
-            “AI là người cộng sự, không phải người thay thế.”
+            Chúng tôi tin rằng AI là công cụ mạnh mẽ giúp con người sáng tạo hiệu quả hơn,
+            nhưng yếu tố con người vẫn là trung tâm của mọi đổi mới.
           </p>
         </Section>
       </div>
