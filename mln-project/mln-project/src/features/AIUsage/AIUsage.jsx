@@ -62,36 +62,7 @@ const AIUsage = () => {
           </ul>
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-900">
-          So sánh giữa Phản hồi của AI và Works Đã Chỉnh sửa của Nhóm Chúng Tôi
-        </h2>
-
-        <h3 className="text-2xl text-gray-900" >Exhibit 1</h3>
-
-        {/* Comparison Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          
-          {/* AI Response Placeholder */}
-          <div className="flex flex-col items-center">
-            <div className="w-full h-[500px]  bg-gray-300 rounded-md"></div>
-            <p className="text-sm text-gray-600 mt-2">Phản hồi của AI</p>
-          </div>
-
-          {/* Team Edited Placeholder */}
-          <div className="flex flex-col items-center">
-            <div className="w-full h-[500px] bg-gray-300 rounded-md"></div>
-            <p className="text-sm text-gray-600 mt-2">Works Đã Chỉnh sửa của Nhóm Chúng Tôi</p>
-          </div>
-        </div>
-
-        {/* Explanation Paragraph */}
-        <p className="text-gray-700 leading-relaxed mt-4">
-          The images above show the difference between what the AI generated and
-          how our team refined it. While AI provided a good starting point, we
-          adjusted the design, improved clarity, and ensured consistency with our
-          project’s vision.
-        </p>
+      
       </div>
     </div>
   )

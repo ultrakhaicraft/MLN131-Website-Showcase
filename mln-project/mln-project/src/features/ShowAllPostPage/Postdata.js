@@ -1,6 +1,7 @@
 import PostImage3 from "@/assets/PostImage3.jpg";
 import HinhAnhLeHoi from "@/assets/HinhAnhLeHoi.jpeg"
 import KhaiNiemTonGiao from "@/assets/KhaiNiemTonGiao.jpeg"
+import PhatVaCongGiao from "@/assets/PhatVaCongGiao.jpg"
 
 export const posts = [
     {
@@ -66,7 +67,7 @@ export const posts = [
     category: "Tôn giáo",
     excerpt: "Bài viết này sẽ cung cấp cái nhìn tổng quan về tình trạng tôn giáo ở Việt Nam hiện nay.",
     author: "Phan Quang Khải",
-    image: "/images/slow-living.jpg",
+    image: PhatVaCongGiao,
     path: "/post/6"
   },
   
