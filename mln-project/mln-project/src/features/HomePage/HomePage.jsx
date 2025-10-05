@@ -1,23 +1,12 @@
 import React from "react";
 import "./HomePage.css";
 import { Link, useNavigate } from "react-router-dom";
-<<<<<<< HEAD
-import PostImage1 from "@/assets/Dang1.jpg";
-import PostImage3 from "@/assets/PostImage3.jpg";
-import HinhAnhHCM from "@/assets/HinhAnhHCM.png"
-import IntroImage from "@/assets/hcm_3.jpg";
-import KhaiNiemTonGiao from "@/assets/KhaiNiemTonGiao.jpeg"    
-import HinhAnhLeHoi1 from "@/assets/HinhAnhLeHoi1.jpeg";
-
-
-=======
 import { motion } from "framer-motion";
 
 import Family1 from "@/assets/PostImage1.jpg";
 import PostImage1 from "@/assets/Dang1.jpg";
 import HinhAnhHCM from "@/assets/HinhAnhHCM.png";
 import cover2 from "@/assets/cover2.png";
->>>>>>> 68eb0aaf772ec5519fd3a5a8ed4bba501e98a21f
 
 function Homepage() {
   const navigate = useNavigate();
@@ -64,16 +53,6 @@ function Homepage() {
           transition={{ duration: 0.6 }}
         >
           Cổng thông tin về dân tộc và tôn giáo của Việt Nam
-<<<<<<< HEAD
-        </h2>
-        <p className="mb-4 text-xl">
-          Chào mừng mọi người đển với cổng thông tin về dân tộc và tôn giáo của Việt Nam dành cho người Việt Nam
-        </p>
-        
-        <div className="flex justify-center">
-          <img className="rounded-md h-[400px] w-2/3" src={IntroImage} alt="Hình ảnh giới thiệu" /> 
-        </div>
-=======
         </motion.h2>
         <motion.p
           className="mb-6 text-xl text-center text-gray-800"
@@ -97,7 +76,6 @@ function Homepage() {
             whileHover={{ scale: 1.05 }}
           />
         </motion.div>
->>>>>>> 68eb0aaf772ec5519fd3a5a8ed4bba501e98a21f
       </section>
 
       {/* Về chúng tôi */}
@@ -156,25 +134,6 @@ function Homepage() {
             >
               <Link to="/post/2">
                 <img
-<<<<<<< HEAD
-                  src={HinhAnhLeHoi1}
-                  alt="Family"
-                  className="w-full h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
-                />
-              </Link>
-              <p className="medium-text">Tăng cường quản lí nhà nước về hoạt động tôn giáo trên không gian mạng Việt Nam hiện nay</p>
-              <div className="flex flex-col gap-2">
-                <Link to="/post/3">
-                  <img
-                    src={KhaiNiemTonGiao}
-                    alt="Family"
-                    className="w-full  h-[220px] rounded-md object-cover cursor-pointer hover:opacity-90 transition"
-                  />
-                </Link>
-                <p className="medium-text">Thông qua thời kỳ quá độ, làm sao để tôn giáo cần được quản lý chặt chẽ hơn để đảm bảo an ninh trật tự xã hội ?</p>
-              </div>
-            </div>
-=======
                   src={PostImage1}
                   alt="Post 2"
                   className="w-full h-[220px] rounded-lg object-cover shadow-md hover:brightness-90 transition"
@@ -201,7 +160,6 @@ function Homepage() {
                 Thông qua thời kỳ quá độ, làm sao để tôn giáo cần được quản lý chặt chẽ hơn để đảm bảo an ninh trật tự xã hội?
               </p>
             </motion.div>
->>>>>>> 68eb0aaf772ec5519fd3a5a8ed4bba501e98a21f
           </div>
         </div>
       </section>
