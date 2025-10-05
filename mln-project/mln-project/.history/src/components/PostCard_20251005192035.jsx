@@ -5,7 +5,8 @@ const PostCard = ({ post }) => {
   return (
     <div className="group flex flex-col justify-between bg-white/90 rounded-2xl shadow-md overflow-hidden 
                     transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:bg-white min-h-[520px]">
-
+      
+      {/* === ẢNH === */}
       <div className="relative">
         <img
           src={post.image}
@@ -24,25 +25,32 @@ const PostCard = ({ post }) => {
           {post.category}
         </span>
       </div>
-      <div className="flex flex-col justify-between flex-grow p-5">
 
+      {/* === NỘI DUNG === */}
+      <div className="flex flex-col justify-between flex-grow p-5">
+        {/* Meta info */}
         <div className="mb-1 text-xs text-gray-500 md:text-sm">
           {post.date} • {post.readTime}
         </div>
 
+        {/* Tiêu đề */}
         <h2 className="text-lg font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-[#C62828] transition-colors">
           {post.title}
         </h2>
 
+        {/* Đoạn trích (Excerpt) */}
         <p className="mb-4 text-sm leading-relaxed text-gray-600 line-clamp-2">
           {post.excerpt}
         </p>
+
+        {/* Tác giả */}
         {post.author && (
           <div className="mb-4 text-sm italic font-medium text-gray-700">
             {post.author}
           </div>
         )}
 
+        {/* Nút đọc thêm */}
         <Link
           to={post.path}
           className="mt-auto inline-block w-fit text-sm font-semibold text-[#C62828] hover:text-[#FBC02D] 
