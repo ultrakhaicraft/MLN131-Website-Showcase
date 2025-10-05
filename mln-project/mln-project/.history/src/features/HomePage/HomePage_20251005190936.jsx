@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 // Assets
 import Family3 from "@/assets/PostImage3.jpg";
 import PostImage1 from "@/assets/Dang1.jpg";
-import PostImage3 from "@/assets/PostImage3.jpg";
 import HinhAnhHCM from "@/assets/HinhAnhHCM.png";
 import cover2 from "@/assets/cover2.png";
 
@@ -19,14 +18,14 @@ function Homepage() {
 
   return (
     <div className="bg-[#FFF8E7] min-h-screen p-8">
-
+      {/* ================= HEADER ================= */}
       <motion.div
         className="relative mb-16 text-center"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-    
+        {/* Tiêu đề chính */}
         <motion.h1
           className="relative z-20 mb-6 text-5xl md:text-6xl font-extrabold leading-snug text-transparent bg-clip-text bg-gradient-to-r from-[#C62828] via-[#E53935] to-[#FBC02D] drop-shadow-[0_3px_4px_rgba(0,0,0,0.3)]"
           initial={{ scale: 0.9 }}
@@ -41,7 +40,7 @@ function Homepage() {
           </span>
         </motion.h1>
 
-
+        {/* Hình minh họa */}
         <div className="flex justify-center mt-10">
           <motion.img
             src={HinhAnhHCM}
@@ -53,6 +52,7 @@ function Homepage() {
         </div>
       </motion.div>
 
+      {/* ================= GIỚI THIỆU ================= */}
       <section className="mb-20">
         <motion.h2
           className="mb-4 text-4xl md:text-5xl font-extrabold text-center text-[#B71C1C]"
@@ -88,7 +88,7 @@ function Homepage() {
         </motion.div>
       </section>
 
-    
+      {/* ================= VỀ CHÚNG TÔI ================= */}
       <section className="my-20 text-center">
         <motion.h2
           className="mb-6 text-4xl md:text-5xl font-bold text-[#B71C1C]"
@@ -113,12 +113,14 @@ function Homepage() {
         </ReadMoreButton>
       </section>
 
+      {/* ================= BÀI VIẾT NỔI BẬT ================= */}
       <section className="mb-20">
         <h2 className="mb-8 text-4xl font-bold text-[#B71C1C] border-b-4 border-[#FBC02D] inline-block">
           Các Bài viết nổi bật
         </h2>
 
         <div className="grid gap-8 md:grid-cols-3">
+          {/* Big Post */}
           <motion.div
             className="flex flex-col gap-3 md:col-span-2"
             whileHover={{ scale: 1.02 }}
@@ -136,7 +138,7 @@ function Homepage() {
             </p>
           </motion.div>
 
-         
+          {/* Side Posts */}
           <div className="flex flex-col gap-8">
             <motion.div
               className="flex flex-col gap-2"
@@ -178,6 +180,7 @@ function Homepage() {
   );
 }
 
+// ================= BUTTON COMPONENT =================
 const ReadMoreButton = ({ children, onClick }) => (
   <motion.div
     className="flex justify-center"
