@@ -151,11 +151,15 @@ export default function AIUsage() {
           </p>
           <ul className="list-disc list-inside">
             <li>
-              Hỗ trợ triển khai UI/UX từ bản thiết kế mà không cần lập trình viên
-              chuyên sâu về frontend.
+              Đầu tiên, để hỗ trợ việc triển khai UI/UX vào mã Front end.
+              Lý do là tất cả chúng tôi không phải là nhà phát triển front end với kỹ năng thiết kế trang web. Do đó, việc sử dụng AI chủ yếu là để
+              tạo Code React dựa trên thiết kế Figma của chúng tôi
             </li>
             <li>
-              Giúp tạo nhanh ý tưởng cho các bài viết và nghiên cứu nội dung.
+              Thứ hai, chúng tôi muốn tạo ra nhiều ý tưởng cho các bài viết của mình một cách nhanh chóng
+            để nhanh chóng chuyển sang việc chọn lọc ý tưởng. Do đó, công việc của AI là tạo ra khung ý tưởng cơ bản cho mỗi
+            bài viết cũng như tìm kiếm các nguồn trực tuyến, chẳng hạn như tài liệu nghiên cứu học thuật và tin tức
+
             </li>
           </ul>
         </Section>
@@ -172,13 +176,11 @@ export default function AIUsage() {
             học thuật:
           </p>
           <ul className="list-disc list-inside">
-            <li>Ghi rõ nguồn gốc nội dung AI tạo ra.</li>
-            <li>
-              Xem xét và kiểm tra kỹ code hoặc nội dung trước khi đưa vào sản phẩm.
-            </li>
-            <li>
-              Chỉ sử dụng AI như nguồn cảm hứng, không thay thế nghiên cứu con người.
-            </li>
+            <li>Ghi rõ nguồn gốc nội dung do AI tạo ra</li>
+            <li>Chỉ sử dụng nội dung do AI tạo ra như một tài nguyên bổ sung hoặc nguồn cảm hứng, không phải là nguồn chính</li>
+            <li>Xem xét và xác thực code do AI tạo ra trước khi triển khai</li>
+            <li>Đảm bảo sản phẩm cuối cùng là nguyên bản</li>
+            <li>Quan trọng nhất, giao tiếp giữa các thành viên trong nhóm để nhận phản hồi và cải tiến</li>
           </ul>
         </Section>
 
