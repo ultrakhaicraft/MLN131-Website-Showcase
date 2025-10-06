@@ -6,6 +6,8 @@ import AboutUs2 from "@/assets/AboutUs2.jpg";
 import QuangKhai from "@/assets/QuangKhai.png";
 import LamKhanh from "@/assets/LamKhanh.jpg";
 import DucThanh from "@/assets/DucThanh.jpg";
+import DinhNgan from "@/assets/DinhNgan.jpg";
+import ThuAn from "@/assets/ThuAn.jpg";
 
 const fadeInUp = (delay = 0) => ({
   hidden: { opacity: 0, y: 40 },
@@ -115,9 +117,9 @@ export default function About() {
         <div className="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-5 justify-items-center">
           {[
             { name: "Trần Lâm Khánh", role: "Content Writer", img: LamKhanh },
-            { name: "Trần Nguyễn Thu An", role: "Content Writer", img: null },
+            { name: "Trần Nguyễn Thu An", role: "Content Writer", img: ThuAn },
             { name: "Nguyễn Đức Thành", role: "Frontend", img: DucThanh },
-            { name: "Phạm Đình Ngân", role: "Content Writer", img: null },
+            { name: "Phạm Đình Ngân", role: "Content Writer", img: DinhNgan },
             { name: "Phan Quang Khải", role: "Leader, Frontend", img: QuangKhai },
           ].map((m, i) => (
             <motion.div
